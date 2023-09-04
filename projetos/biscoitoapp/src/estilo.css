@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    text-align:center;
+    color: #dd7b22;
+    font-style: italic;
+}
+
+.imagem{
+    width: 320px;
+    height: 320px;
+    margin-top: 50px;
+}
+
+.texto-frase{
+    font-style: italic;
+    color:#dd7b22;
+    font-size: 15pt;
+}

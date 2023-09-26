@@ -12,7 +12,7 @@ function RoutesApp(){
         <Routes>
             <Route path='/' element={<Home/>}/>
             <Route path='/login' element={<Login/>}/>
-            <Route path='/cadastro' element={<Cadastro/>}/>
+            <Route path='/signup' element={<Cadastro/>}/>
             <Route path='/cards' element={<Cards/>}/>
         </Routes>
         </BrowserRouter>

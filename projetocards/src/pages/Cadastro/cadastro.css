@@ -67,10 +67,13 @@
 }
 
 .graybox button{
+    border: none;
     width: 80vw;
     height: 3.5vh;
     font-size: clamp(1em, 1em + 1vw, 1.3em);
     margin-bottom: 15px;
+    background-color: #5a5a5a;
+    color: white;
 }
 
 .graybox button:hover{
@@ -89,4 +92,3 @@ font-size: clamp(0.8em, 0.8em + 1vw, 1.1em);
 .link-to-home:hover{
     text-decoration: underline;
 }
-

@@ -7,8 +7,34 @@ function Cadastro(){
     const [nome, setNome] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [passwordVer, setPasswordVer] = useState('');
     const [terms, setTerms] = useState(false);
     const [update, setUpdate] = useState(false);
+
+    function verifyPassword(e){
+
+        const input2 = document.querySelector("input[id='passwordVer']");    
+
+        if(passwordVer != password){
+            input2.style.border = "3px solid red";
+        }else{
+            input2.style.border = "3px solid green";
+        }
+        return true;
+    }
+
+    function verify(e){
+        const input2 = document.querySelector("input[id='passwordVer']");    
+
+        if(passwordVer != password){
+            input2.style.border = "3px solid red";
+            alert("As senhas não batem");
+            input2.focus();
+        }else{
+            input2.style.border = "3px solid green";
+        }
+        return true;
+    }
 
     return(
         <div className='register-container'>
@@ -35,6 +61,15 @@ function Cadastro(){
                         onChange={(e)=>setPassword(e.target.value)}
                         ></input>
                     </div>
+                    <div className='passwordVer' >
+                        <input placeholder='Confirme sua senha'
+                        id='passwordVer'
+                        type='password'
+                        value={passwordVer}
+                        onChange={(e)=>setPasswordVer(e.target.value)}
+                        onBlur={(e)=>verifyPassword(e.target.value)}
+                        ></input>
+                    </div>
                     <div className='checkboxes-cadastro'>
                         <div className='terms-conteiner'>
                             <input type='checkbox'
@@ -51,11 +86,11 @@ function Cadastro(){
                             <div className='news'>Eu aceito receber emails de atualizações da L&C.</div>
                         </div>
                     </div>
-                    <button type='submit'>
+                    <button type='submit' onSubmit={(e) => verify(e.target.value)}>
                         Criar
                     </button>
                     <Link to="/" className="link-to-home">
-                        Não possui uma conta? Cadastre-se
+                        Já possui uma conta? Faça o login
                     </Link>
                 </form>
         </div>

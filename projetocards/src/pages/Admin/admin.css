@@ -1,0 +1,103 @@
+.admin-container{
+    color: white;
+    margin: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-admin{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-admin textarea{
+    font-size: clamp(0.7em, 0.7em + 10vw, 1em);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 80vw;
+    height: 30vh;
+    margin-bottom: 20px;
+}
+
+.form-admin button{
+    border: none;
+    width: 80vw;
+    height: 3.5vh;
+    font-size: clamp(1em, 1em + 1vw, 1.3em);
+    margin-bottom: 15px;
+    background-color: #5a5a5a;
+    color: white;
+}
+
+.form-admin  button:hover{
+    background-color: #9511e7;
+    color: white;
+}
+
+.form-admin  button:focus{
+    background-color: #9511e7;
+    color: white;
+}
+
+.task{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000000ee;
+    padding: 5px;
+    border: 3px solid #9511e7;
+    width: fit-content;
+    max-width: 80vw;
+    height: fit-content;
+    max-height: 20dvh;
+
+}
+
+.task p{
+    color: rgb(184, 103, 255);
+    font-weight: bolder;
+    height: fit-content;
+    margin: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.buttons button{
+    border: unset;
+    margin: 10px;
+    font-size: clamp(0.4em, 0.4em + 10vw, 0.8em);
+    border-radius: 3px;
+    width: fit-content;
+    padding: 5px;
+}
+
+.btn-delete{
+    color: rgba(0, 216, 0, 0.863);
+    background-color: transparent;
+    width: 20vw;
+}
+
+.btn-edit{
+    color: rgb(255, 217, 0);
+    background-color: transparent;
+}
+
+.btn-logout{
+    position: absolute;
+    bottom: 6%;
+    height: 3vh;
+    width: 25vw;
+    border: unset;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.205);
+}

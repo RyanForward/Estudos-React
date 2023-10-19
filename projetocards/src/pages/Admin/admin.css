@@ -1,103 +1,133 @@
-.admin-container{
-    color: white;
-    margin: 20px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
+@media (250px <= width < 600px){ 
+    .admin-container{
+        color: white;
+        margin: 20px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
 
-.form-admin{
-    margin: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
+    .form-admin{
+        margin: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
 
-.form-admin textarea{
-    font-size: clamp(0.7em, 0.7em + 10vw, 1em);
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    width: 80vw;
-    height: 30vh;
-    margin-bottom: 20px;
-}
+    .form-admin textarea{
+        resize: none;
+        border-radius: 5px 5px 0px 0px;
+        padding: 5px;
+        font-size: clamp(0.7em, 0.7em + 10vw, 1em);
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        width: 80vw;
+        height: 30vh;
+    }
 
-.form-admin button{
-    border: none;
-    width: 80vw;
-    height: 3.5vh;
-    font-size: clamp(1em, 1em + 1vw, 1.3em);
-    margin-bottom: 15px;
-    background-color: #5a5a5a;
-    color: white;
-}
+    .form-admin button{
+        border: none;
+        width: 80vw;
+        border-radius: 0px 0px 5px 5px;
+        height: 3.5vh;
+        font-size: clamp(1em, 1em + 1vw, 1.3em);
+        margin-bottom: 15px;
+        background-color: #5a5a5a;
+        color: white;
+    }
 
-.form-admin  button:hover{
-    background-color: #9511e7;
-    color: white;
-}
+    .form-admin  button:hover{
+        background-color: #9511e7;
+        color: white;
+    }
 
-.form-admin  button:focus{
-    background-color: #9511e7;
-    color: white;
-}
+    .form-admin  button:focus{
+        background-color: #9511e7;
+        color: white;
+    }
 
-.task{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #000000ee;
-    padding: 5px;
-    border: 3px solid #9511e7;
-    width: fit-content;
-    max-width: 80vw;
-    height: fit-content;
-    max-height: 20dvh;
+    .task{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        padding: 5px;
+        width: 80vw;
+        height: fit-content;
+        margin: 10px;
+        word-break: break-all;
+        border-radius: 5px;
+        border: 3px inset #d7ee0a;
 
-}
+        background-color: rgba(85, 85, 85, 0.192);
 
-.task p{
-    color: rgb(184, 103, 255);
-    font-weight: bolder;
-    height: fit-content;
-    margin: 10px;
-}
+    }
 
-.buttons {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-}
+    .task p{
+        color:rgb(255, 255, 255);
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+        height: fit-content;
+        margin: 5px;
+    }
 
-.buttons button{
-    border: unset;
-    margin: 10px;
-    font-size: clamp(0.4em, 0.4em + 10vw, 0.8em);
-    border-radius: 3px;
-    width: fit-content;
-    padding: 5px;
-}
+    .buttons {
+        font-size: clamp(0.3em, 0.3em + 10vw, 0.8em);
+        display: flex;
+        width: 70vw;
+        margin-top: 5px;
+        padding-right: 5vw;
+        justify-content: start;
+        flex-direction: row;
+        align-items: start;
+    }
 
-.btn-delete{
-    color: rgba(0, 216, 0, 0.863);
-    background-color: transparent;
-    width: 20vw;
-}
+    .buttons button{
+        border-radius: 3px;
+        padding: 2px;
+        border: unset;
+        margin: 5px;
+        margin-left: 5px;
+        
+    }
 
-.btn-edit{
-    color: rgb(255, 217, 0);
-    background-color: transparent;
-}
+    .btn-delete{
+        color: black;
+        background-color: rgb(241, 241, 241);
+        letter-spacing: 0px;
+        font-weight: bolder;
+        width: 14vw;
+        height: 2.5vh;
+    }
 
-.btn-logout{
-    position: absolute;
-    bottom: 6%;
-    height: 3vh;
-    width: 25vw;
-    border: unset;
-    color: white;
-    background-color: rgba(255, 0, 0, 0.205);
+    .btn-delete:hover{
+        background-color: rgb(72, 224, 72);
+    }
+
+
+    .btn-edit{
+        color: black;
+        background-color: rgb(241, 241, 241);
+        letter-spacing: 0px;
+        width: 10vw;
+        font-weight: bolder;
+        height: 2.5vh;
+    }
+
+    .btn-edit:hover{
+        background-color: rgb(247, 247, 95);
+    }
+
+    .btn-logout{
+        position: relative;
+        bottom: 6%;
+        height: 3vh;
+        width: 25vw;
+        margin-top: 20px;
+        border: unset;
+        color: white;
+        background-color: rgba(255, 0, 0, 0.205);
+    }
 }

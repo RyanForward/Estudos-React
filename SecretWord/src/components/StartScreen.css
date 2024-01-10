@@ -1,0 +1,12 @@
+.start{
+    color: white;
+}
+
+.start h1{
+    font-size: 3.5em
+}
+
+.start p{
+    margin-bottom: 2em;
+    color: rgb(77, 233, 233);
+}
